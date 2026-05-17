@@ -34,7 +34,20 @@ System.setProperty("webdriver.chrome.driver", "C:\\path\\to\\chromedriver.exe");
 System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chromedriver-win64\\chromedriver.exe");
 ```
 
-### Шаг 3: Сборка проекта
+### Шаг 3: Сборка и запуск проекта (если Maven не установлен)
+
+Если Apache Maven не установлен в системе, можно использовать предоставленный скрипт `build.bat`:
+
+```bash
+build.bat
+```
+
+Этот скрипт автоматически:
+1. Скачает необходимые зависимости (если их нет)
+2. Скомпилирует проект
+3. Запустит приложение
+
+### Шаг 4: Сборка проекта (если Maven установлен)
 
 Откройте терминал в директории проекта и выполните:
 
@@ -42,7 +55,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Downloads\\chrom
 mvn clean compile
 ```
 
-### Шаг 4: Запуск проекта
+### Шаг 5: Запуск проекта (если Maven установлен)
 
 Для запуска всех заданий выполните:
 
